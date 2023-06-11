@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <title>Formulaire et anciens messages</title>
+   <style>
+      .category {
+         margin-bottom: 20px;
+      }
+
+      .category h2 {
+         font-size: 18px;
+      }
+
+      form {
+         max-width: 400px;
+         margin-bottom: 20px;
+      }
+
+      label, input, textarea {
+         display: block;
+         margin-bottom: 10px;
+      }
+
+      button {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<header>
+   <button onclick="window.location.href='index.html'">Acceuil</button>
+   <button onclick="window.location.href='info.php'">info php</button>
+</header>
+<body>
+<div class="category">
+   <h2>Formulaire</h2>
+   <form action="bd.php" method="post">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prenom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+   </form>
+</div>
+</body>
+</html>
+
